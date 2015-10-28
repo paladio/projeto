@@ -1,6 +1,7 @@
 <?php
 include("cabecalho.php");
-include("logica-usuario.php");
+require_once("logica-usuario.php");
+
 ?>
 
 
@@ -36,7 +37,7 @@ include("logica-usuario.php");
     <?php
     if (usuarioEstaLogado()) {
         ?>
-        <p class="text-success">Você está logado como <?= usuarioLogado() ?> <a href="logout.php">Deslogar</a></p>
+        <p class="text-success"> TTTVocê está logado como <?= usuarioLogado() ?> <a href="logout.php">Deslogar</a></p>
         <?php
     } else {
         ?>
